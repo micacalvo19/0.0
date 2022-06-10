@@ -361,4 +361,20 @@ color: #ecc4ab;
     margin: 2.5% 0% 2.5% 0%;
     color: black;
 }
+.div4{
+    position: relative;
+    height: 80%;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+    background-image: linear-gradient(to left, grey, #ecc4ab, grey) ;
+    border: 2px solid black;
+    overflow: hidden;
+}
+section div p{
+    transform: translate(45%, 0%);
+    color: black;
+    padding: 2%;
+    font-size: x-large;
+}
 }
