@@ -10,44 +10,58 @@
 <body>
     <div id="grid1">
         <header class="border">
-            <div class="div2">
-                <img src="img/logo.png" alt="logo">
+            <div id="div2">
+                <img class="imgdiv" src="img/logo.png" alt="img3">
             </div>
-            <section class="div1" id="flexbox1">
-                <div><a href="index.html" target="_blank">INICIO</a></div>
-                <div><a href="iniciarSesion.html"  target="_blank">INICIAR SESIÓN</a></div>
-                <div><a href="idea.html" target="_blank">IDEA</a></div>
-                <div><a href="mapa.html" target="_blank">MAPA</a></div>
-            </section>
+            <div class="dropdown" id="div1">
+                <button class="dropbtn">MENU</button>
+                <div class="dropdown-content">
+                  <a href="index.html">Inicio</a>
+                  <a href="idea.html">Idea</a>
+                  <a href="mapa.html">Ubicacion</a>
+                </div>
+            </div>
+            <div id="div3">
+                <img class="flexboximg" src="img/tiktokt.jpg" alt="img3">
+                <img class="flexboximg" src="img/instagram.jpg" alt="img3">
+                <img class="flexboximg" src="img/facebook.jpg" alt="img3">
+            </div>
         </header>
         <section>
-            <article>
-            <form action="" method="GET" enctype="multipart/form-data"> 
-                    <fieldset>
-                        <label for="gmail">Gmail</label>
-                        <br>
-                        <input name="nombre_de_usuario" type="texto" placeholder="Ingresar gmail">
-                        <br>
-                        <br>
-                        <label for="nombre_de_usuario">Nombre de usuario</label>
-                        <br>
-                        <input name="nombre_de_usuario" type="texto" placeholder="Ingresar nombre de usuario">
-                        <br>
-                        <br>
-                        <label for="password">Contraseña</label>
-                        <br>
-                        <input name="password" type="password" placeholder="Ingresar nueva contraseña">
-                        <br>
-                        <br>
-                        <label for="confirm_password">Confirmar contraseña</label>
-                        <br>
-                        <input name="password" type="password" placeholder="Confirmar contraseña">
-                        <br>
-                        <br>
-                        <input name="enviar" type="submit" value="ENVIAR">
-                    </fieldset>
-                </form>                                    
-            </article>
+            <div id="div5">
+                <div class="imgdiv">
+                    <article>
+                        <form action="" method="GET" enctype="multipart/form-data"> 
+                                <fieldset class="border" >
+                                    <label class="formtext2" for="gmail"><br>Gmail<br></label>
+                                    <br>
+                                    <input class="moveform" class="input" name="nombre_de_usuario" type="texto" placeholder="Ingresar gmail">
+                                    <br>
+                                    <br>
+                                    <label  class="formtext2" for="nombre_de_usuario">Nombre de usuario<br></label>
+                                    <br>
+                                    <input class="moveform" class="input" name="nombre_de_usuario" type="texto" placeholder="Ingresar nombre de usuario">
+                                    <br>
+                                    <br>
+                                    <label  class="formtext2" for="password">Contraseña<br></label>
+                                    <br>
+                                    <input class="moveform" class="input" name="password" type="password" placeholder="Ingresar nueva contraseña">
+                                    <br>
+                                    <br>
+                                    <label  class="formtext2" for="confirm_password">Confirmar contraseña<br></label>
+                                    <br>
+                                    <input class="moveform" class="input" name="password" type="password" placeholder="Confirmar contraseña">
+                                    <br>
+                                    <br>
+                                    <input class="moveform" class="button2" name="enviar" type="submit" value="ENVIAR">
+                                </fieldset>
+                        </form>                                    
+                    </article> 
+                </div>
+                <div class="displaynone">
+                    <img class="imgdiv" src="img/imgr2.jpg" alt="img3">
+                </div>
+            </div>
         </section> 
         <footer>
             <div>
