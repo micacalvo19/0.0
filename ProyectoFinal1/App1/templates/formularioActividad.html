@@ -1,0 +1,18 @@
+{% extends "inicio.html" %}
+{% load static %}
+
+{% block contenido_variable %}
+<body>
+    {% if form.errors %}
+        <p>Hay un error con el formulario</p>
+    {% endif %}
+    
+    <form action="/formularioActividad/" method="POST"> {% csrf_token %}
+        <table>
+            {{ form.as_table}}
+        </table>
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+</html>
+{% endblock  %}
