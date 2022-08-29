@@ -1,0 +1,22 @@
+{% extends 'App1/inicio.html' %}
+
+{% load static %}
+
+{% block contenido_variable %}
+
+<body>
+    {% if form.errors %}
+        <p>Hay un error</p>
+    {% endif %}
+
+    <form action="{% url 'crear_receta' %}" enctype="multipart/form-data" method="POST" enctype='multipart/form-data' style="border: black solid 2px; padding: 20px; display: flex; flex-direction: column; margin-top: 30px; margin-left: 100px; margin-right: 100px;"> {% csrf_token %}
+        <table>
+            {{ form.media}}
+            {{ form.as_table}}
+        </table>
+        
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+
+{% endblock  %}
