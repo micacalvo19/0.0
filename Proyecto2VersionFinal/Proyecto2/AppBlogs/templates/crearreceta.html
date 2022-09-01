@@ -1,0 +1,20 @@
+{% extends 'App1/inicio.html' %}
+
+{% load static %}
+
+{% block contenido_variable_recectas %}
+
+<body>
+    {% if form.errors %}
+        <p>Hay un error</p>
+    {% endif %}
+
+    <form action="{% url 'crearreceta' %}" method="POST" style="border: black solid 2px; padding: 20px; display: flex; flex-direction: column; margin-top: 30px; margin-left: 100px; margin-right: 100px;"> {% csrf_token %}
+        <table>
+            {{ form.as_table}}
+        </table>
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+
+{% endblock  %}

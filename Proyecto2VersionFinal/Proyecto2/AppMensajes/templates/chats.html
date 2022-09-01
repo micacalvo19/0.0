@@ -1,0 +1,4 @@
+{% for usuario in lista %}
+
+<a href= " {% url 'chat' usuario.id %}" > <li> {{ usuario.username}} </li>  </a>
+{% endfor %}
